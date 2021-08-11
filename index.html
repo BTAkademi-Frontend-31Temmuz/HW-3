@@ -10,7 +10,9 @@
 <body>
     <h3>BT Otel Rezervasyon Formu</h3>
 <div>
-  <form>
+  <form action="mesaj.html">
+    <fieldset>
+     
     <label for="fname">Adınız:</label>
     <input type="text" id="fname" name="firstname" placeholder="Adınızı Yazın Lütfen" required>
 
@@ -36,15 +38,16 @@
 <hr><br>
     <label for="date">Oda Seçiminiz:</label><br>
     <label for="radiotek">Tek Kişilik Oda:</label>
-    <input type="radio" id="radiotek" name="radiotek">
+    <input type="radio" id="radiotek" name="oda">
     <label for="radiocift">Çift Kişilik Oda:</label>
-    <input type="radio" id="radiocift" name="radiocift">
+    <input type="radio" id="radiocift" name="oda">
 <hr><br>
     <label for="w3review">Varsa Notlarınız:</label><br>
     <textarea id="notlar" name="notlar" rows="4" cols="170" required>
     </textarea>
 <hr><br>
     <input type="submit" value="Formu Gönder" formaction="mesaj.html"><input id="iptalBtn" type="submit" value="İptal Et" formaction="index.html">
+  </fieldset>
   </form>
 </div>
 
