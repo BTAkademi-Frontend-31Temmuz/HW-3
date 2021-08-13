@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Hotel Reservation</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+</head>
+
+<body>
+	
+		<form method="POST" action="reservationcompleted.html">
+			<fieldset>
+				<legend>Reservation Page</legend>
+				<div class="form-group row">
+					<label for="name" class="col-sm-2 col-form-label">Name</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="name" placeholder="Enter your name ..." required> </div>
+				</div>
+				<div class="form-group row">
+					<label for="surname" class="col-sm-2 col-form-label">Surname</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="surname" placeholder="Enter your surname ..." required> </div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Adress Details</legend>
+				<div class="form-group row">
+					<label for="address" class="col-sm-2 col-form-label">Address</label>
+					<div class="col-sm-10">
+						<textarea class="form-control" id="address" rows="1" placeholder="Enter your address ..." required></textarea>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="city" class="col-sm-2 col-form-label">City</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="city" placeholder="Enter your city ..." required> </div>
+				</div>
+				<div class="form-group row">
+					<label for="zipCode" class="col-sm-2 col-form-label">Zip Code</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="zipCode" pattern="[0-9]{5}" placeholder="Enter your zip code ..." required> </div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Reservation Details</legend>
+				<div class="form-group row">
+					<label for="checkInDate" class="col-sm-2 col-form-label">Check-in Date</label>
+					<div class="col-sm-10">
+						<input type="date" class="form-control" id="checkInDate" placeholder="Enter check-in date ..." required> </div>
+				</div>
+				<div class="form-group row">
+					<label for="numberOfDays" class="col-sm-2 col-form-label">Number of Days</label>
+					<div class="col-sm-10">
+						<input type="number" class="form-control" id="numberOfDays" min="1" max="90" placeholder="Enter number of days ..." required> </div>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm-2 col-form-label">Room Size</label>
+					<div class="col-sm-10">
+						<input type="radio" id="singleRoom" name="roomSize" class="custom-control-input" value="single" checked>
+						<label class="custom-control-label" for="singleRoom">Single Room</label>
+						<input type="radio" id="doubleRoom" name="roomSize" class="custom-control-input" value="double">
+						<label class="custom-control-label" for="doubleRoom">Double Room</label>
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label for="taNote" class="col-sm-2 col-form-label">Note</label>
+					<div class="col-sm-10">
+						<textarea class="form-control" id="Note" rows="2" placeholder="Enter a note ..."></textarea>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary" style="text-align: center;">Submit</button>
+			</fieldset>
+		</form>
+	</div>
+</body>
+
+</html>
